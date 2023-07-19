@@ -81,7 +81,7 @@ class SuspendAccountService < BaseService
             rescue Aws::S3::Errors::NoSuchKey
               Rails.logger.warn "Tried to change acl on non-existent key #{attachment.s3_object(style).key}"
             end
-          when :fog
+          when :fog, :azure
             # Not supported
           when :filesystem
             begin
