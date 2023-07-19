@@ -73,7 +73,7 @@ class AttachmentBatch
               # Ignore failure to delete a directory, with the same ignored errors
               # as Paperclip
             end
-          when :fog
+          when :fog, :azure
             logger.debug { "Deleting #{attachment.path(style)}" }
             attachment.directory.files.new(key: attachment.path(style)).destroy
           end
