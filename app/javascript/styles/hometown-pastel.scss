@@ -11,6 +11,11 @@
   background: var(--color-hometown-compose-form);
 }
 
+/* The background of a column, for both the simple and the advanced web UI. */
+.item-list {
+  background: var(--color-hometown-main-col);
+}
+
 /* Previously known as Macaron theme (Pastel light) */
 [data-color-scheme="light"] {
   --color-macaron-purple: #c8c4dd;
@@ -40,6 +45,7 @@
   /* HOMETOWN OVERRIDES */
   --color-hometown-column-header: var(--color-macaron-purple);
   --color-hometown-compose-form: var(--color-white);
+  --color-hometown-main-col: var(--color-white);
 }
 
 /* Previously known as fairy-floss (Pastel dark) */
