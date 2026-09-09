@@ -1,16 +1,5 @@
 @use "application";
 
-/* The column headers. */
-.column-header {
-  background: var(--color-hometown-column-header);
-}
-
-/* The toot compose form. */
-.compose-form__highlightable,
-.compose-form__poll__select__value {
-  background: var(--color-hometown-compose-form);
-}
-
 /* The background of a column, for both the simple and the advanced web UI. */
 .item-list {
   background: var(--color-hometown-main-col);
@@ -43,9 +32,28 @@
   --color-bg-brand-softest: var(--color-macaron-green);
 
   /* HOMETOWN OVERRIDES */
-  --color-hometown-column-header: var(--color-macaron-purple);
-  --color-hometown-compose-form: var(--color-white);
   --color-hometown-main-col: var(--color-white);
+
+  // Override the column background to a light purple.
+  .column-header {
+    background: var(--color-macaron-purple);
+
+    // For better contrast, make the back button black.
+    .column-header__back-button {
+      color: var(--color-black);
+    }
+  }
+
+  // Highlight the current toot in the thread overview.
+  .detailed-status__wrapper {
+    background: var(--color-indigo-50);
+  }
+
+  // The toot compose form should be white too.
+  .compose-form__highlightable,
+  .compose-form__poll__select__value {
+    background: var(--color-white);
+  }
 }
 
 /* Previously known as fairy-floss (Pastel dark) */
