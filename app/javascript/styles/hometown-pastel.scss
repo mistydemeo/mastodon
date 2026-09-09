@@ -1,11 +1,8 @@
 @use "application";
 
-/*
-  1. The background of a column, for both the simple and the advanced web UI.
-  2. The background for profile pages, checking for the presence of the profile header. A bit dirty, but does the job for now.
-*/
-.item-list,
-.scrollable:has(._comp_account_header__header) {
+// Set the color of scrollable containers.
+// Especially import for the light theme to set it to light for better contrast.
+.column > .scrollable {
   background: var(--color-hometown-main-col);
 }
 
