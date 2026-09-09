@@ -1,7 +1,11 @@
 @use "application";
 
-/* The background of a column, for both the simple and the advanced web UI. */
-.item-list {
+/*
+  1. The background of a column, for both the simple and the advanced web UI.
+  2. The background for profile pages, checking for the presence of the profile header. A bit dirty, but does the job for now.
+*/
+.item-list,
+.scrollable:has(._comp_account_header__header) {
   background: var(--color-hometown-main-col);
 }
 
