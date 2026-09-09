@@ -39,11 +39,13 @@
   --color-hometown-main-col: var(--color-white);
 
   // Override the column background to a light purple.
-  .column-header {
+  .column-header,
+  .tabs-bar__wrapper {
     background: var(--color-macaron-purple);
 
     // For better contrast, make the back button black.
-    .column-header__back-button {
+    .column-header__back-button,
+    .column-back-button {
       color: var(--color-black);
     }
   }
